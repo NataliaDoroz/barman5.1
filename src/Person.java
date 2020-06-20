@@ -1,16 +1,7 @@
-//Stwórz program składający się z klas:
-//
-//Person – posiada informacje o imieniu, nazwisku i wieku,
-//Drink – posiada informacje o nazwie, cenie i tym, czy zawiera alkohol,
-//W trzeciej klasie o nazwie Barman stwórz metodę main, a w niej obiekt typu Person (osoba, która zamawia drinka), oraz jeden Drink.
-//
-//Jeżeli osoba ma mniej niż 18 lat, to powinna zobaczyć komunikat o odmowie sprzedaży.
-//
-//Jeżeli osoba jest pełnoletnia, to wyświetlamy komunikat typu "[Imię], Twój drink jest gotowy do odbioru. Kwota do zapłaty [cena]".
 public class Person {
-    public String firstName;
-    public String lastName;
-    public int age;
+    private String firstName;
+    private String lastName;
+    private int age;
 
     public Person(String firstName, String lastName, int age) {
         this.firstName = firstName;
@@ -18,5 +9,27 @@ public class Person {
         this.age = age;
     }
 
+    public String getFirstName() {
+        return firstName;
+    }
 
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
 }
